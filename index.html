@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Calculator app</title>
+  <link rel="stylesheet" href="cal-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="calculator">
+    <div class="cal-body">
+      <div class="cal-header">
+        <span class="header-name">calc</span>
+        <span class="themes" id="themes">
+          <span style="margin-right:16px;">THEMES</span>
+          <input type="range" class="range" onchange="range()" value="0" name="range" step="50">
+        </span>
+      </div>
+
+
+      <div class="cal-answer-body">0</div>
+      <div class="cal-body-btn">
+        <div class="cal-button">
+
+          <button type="button" onclick="calculator(7)">7</button>
+          <button type="button" onclick="calculator(8)">8</button>
+          <button type="button" onclick="calculator(9)">9</button>
+          <button type="button" onclick="calculator(del)" class="dark" id="del">DEL</button>
+          <br>
+          <button type="button" onclick="calculator(4)">4</button>
+          <button type="button" onclick="calculator(5)">5</button>
+          <button type="button" onclick="calculator(6)">6</button>
+          <button type="button" onclick="calculator('+')">+</button>
+          <br>
+          <button type="button" onclick="calculator(1)">1</button>
+          <button type="button" onclick="calculator(2)">2</button>
+          <button type="button" onclick="calculator(3)">3</button>
+          <button type="button" onclick="calculator('-')">-</button>
+          <br>
+          <button type="button" onclick="calculator('.')">.</button>
+          <button type="button" onclick="calculator(0)">0</button>
+          <button type="button" onclick="calculator('/')">/</button>
+          <button type="button" onclick="calculator('*')">&#10006;</button>
+          <br>
+          <button type="button" onclick="calculator('reset')" style="width: 180px; " class="dark">RESET</button>
+          <button type="button" onclick="calculator('ans')" class="red">=</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="calculator.js"></script>
+</body>
+
+</html>

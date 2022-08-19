@@ -1,0 +1,245 @@
+*{
+    font-family: 'Spartan', sans-serif;
+}
+body {
+    height: calc(100vh - 16px);
+    background-color: hsl(222, 26%, 31%);
+}
+
+.calculator{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.cal-header{
+    font-size:larger;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 30px auto; 
+    width: 420px;
+}
+.header-name{
+    font-size: xx-large;
+}
+
+.themes{
+    display: flex;
+    font-size: x-small;
+    align-items:center;
+}
+
+.cal-answer-body
+{
+    overflow: hidden;
+    margin: 10px auto;
+    font-size:25pt;  
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 15px;
+    border-radius:10px;
+    width: 400px;
+    height: 40px;
+    color:white;
+    background-color:hsl(224, 36%, 15%);
+}
+
+button {
+    font-size:x-large;
+    height: 50px;
+    width: 80px; 
+    border-radius:10px;
+    font-weight:900;
+    margin: 8px;
+    border-width: 0px;
+    background-color:  hsl(30, 25%, 89%);
+    color: hsl(223, 31%, 20%);
+    box-shadow: -0px 3px #888888;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+.cal-body-btn{
+    background-color:hsl(223, 31%, 20%);
+    width: 400px;
+    padding: 15px;
+    margin: 16px auto;
+    border-radius: 12px;
+}
+
+.dark{
+    font-size:large;
+    box-shadow: -0px 3px hsl(224, 28%, 35%);
+    background-color:  hsl(225, 21%, 49%);
+    color: hsl(30, 25%, 89%);
+}
+
+.red{
+    font-size:large;
+    box-shadow: -0px 3px hsl(6, 70%, 34%);
+    background-color:  hsl(6, 63%, 50%);
+    width: 180px; 
+    color: hsl(30, 25%, 89%);
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px; 
+    border-radius: 10px;
+    /* padding: 100px; */
+    background: hsl(6, 63%, 50%);
+    cursor: pointer;	
+}
+  
+.range{
+    -webkit-appearance: none;   
+    margin: 0;
+    width: 50px;
+    padding: 3px;
+    border-radius: 10px; 
+    background-color: hsl(223, 31%, 20%);
+} 
+   
+/* theme1 */
+
+.theme-light{
+    background-color: hsl(222, 26%, 31%);
+}
+
+.theme-light .cal-header{
+    color:white;
+}
+
+.theme-light .cal-answer-body{ 
+    background-color:hsl(224, 36%, 15%);
+}
+
+.theme-light .cal-body-btn{
+    background-color:hsl(223, 31%, 20%);
+}
+
+.theme-light .red{
+    color: white;
+    box-shadow: -0px 3px hsl(6, 70%, 34%);
+    background-color:  hsl(6, 63%, 50%);
+}
+
+.theme-light button{
+    background-color:  hsl(30, 25%, 89%);
+    color: hsl(223, 31%, 20%);
+    box-shadow: -0px 3px #888888;
+}
+.theme-light .dark{
+    box-shadow: -0px 3px hsl(224, 28%, 35%);
+    background-color:  hsl(225, 21%, 49%);
+    color: hsl(30, 25%, 89%);
+}
+
+.theme-light .range{
+    background-color:hsl(223, 31%, 20%);
+}
+
+.theme-light .range::-webkit-slider-thumb{
+    background: hsl(6, 63%, 50%);
+}
+
+
+/* theme2 */
+
+.theme-ultra-light{
+    background-color:  hsl(0, 0%, 90%);
+}
+
+.theme-ultra-light .cal-header{
+    color: hsl(60, 10%, 19%);
+}
+
+.theme-ultra-light .cal-answer-body{ 
+    color: hsl(60, 10%, 19%);
+    background-color:hsl(0, 0%, 93%);
+}
+
+.theme-ultra-light .cal-body-btn{
+    background-color: hsl(0, 5%, 81%);
+}
+
+.theme-ultra-light .red{
+    color: hsl(30, 25%, 89%);
+    background-color:  hsl(25, 98%, 40%);
+    box-shadow: -0px 3px hsl(25, 99%, 27%);
+}
+
+.theme-ultra-light button{
+    background-color:  hsl(45, 7%, 89%);
+    color:  hsl(0, 0, 100%);
+    box-shadow: -0px 3px  hsl(35, 11%, 61%);
+}
+
+.theme-ultra-light .dark{
+    box-shadow: -0px 3px hsl(185, 58%, 25%);
+    background-color:  hsl(185, 42%, 37%);
+    color: hsl(30, 25%, 89%);
+}
+
+.theme-ultra-light .range{
+    background-color: hsl(0, 5%, 81%);
+}
+
+.theme-ultra-light .range::-webkit-slider-thumb{
+    background: hsl(25, 98%, 40%);
+}
+
+
+
+/* theme3 */
+
+.theme-dark{
+    background-color:  hsl(268, 75%, 9%)
+}
+
+.theme-dark .cal-header{
+    color:hsl(52, 100%, 62%);
+}
+
+.theme-dark .cal-answer-body{ 
+    background-color:  hsl(268, 68%, 20%);
+}
+
+.theme-dark .cal-body-btn{
+    background-color:hsl(268, 71%, 12%);
+}
+
+.theme-dark button{
+    color: hsl(52, 100%, 62%);
+    background-color:  hsl(268, 47%, 21%);
+    box-shadow: -0px 3px  hsl(290, 70%, 36%);
+}
+
+.theme-dark .red{
+    background-color:  hsl(176, 100%, 44%);
+    box-shadow: -0px 3px hsl(177, 92%, 70%);
+}
+
+.theme-dark .dark{
+    box-shadow: -0px 3px hsl(285, 91%, 52%);
+    background-color:   hsl(281, 89%, 26%);
+    color:rgba(255, 255, 255, 0.911)
+}
+
+.theme-dark .range{
+    background-color:hsl(268, 71%, 12%);
+}
+
+.theme-dark .range::-webkit-slider-thumb{
+    background: hsl(176, 100%, 44%);
+}
+

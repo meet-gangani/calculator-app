@@ -1,2 +1,11 @@
 # calculator-app
-calculate your tricky numbers
+calculate your tricky problems
+
+
+## Screenshot
+
+#### Theme 1
+
+#### Theme 2
+
+#### Theme 3
